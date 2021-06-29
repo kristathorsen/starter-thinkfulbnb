@@ -164,4 +164,26 @@ footer p {
   .about-section p {
     width: 50%;
   }
+
+  .host-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .host-section img {
+    width: 50%;
+  }
+
+  .host-section p {
+    width: 50%;
+  }
+
+  .ideas-section {
+    display: flex;
+  }
+
+  .ideas-section img {
+    width: 50%;
+  }
 }
