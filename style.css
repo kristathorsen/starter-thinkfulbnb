@@ -31,7 +31,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -50,12 +50,24 @@ main img {
   flex: 2;
 }
 
+.add-padding {
+  padding-bottom: 10px;
+}
+
 /* -------  Navigation ------- */
 
 header {
   background-color: #ff385c;
   padding: 20px 20px 0 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
 }
 
 .logo {
@@ -66,6 +78,7 @@ header {
 
 header nav ul li {
   list-style-type: none;
+
 }
 
 header nav ul li a {
@@ -79,10 +92,16 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
+ul {
+  display: flex;
+}
+
 /* -------  Search Form ------- */
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 form label {
@@ -104,6 +123,10 @@ form button {
   width: 100%;
 }
 
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
 /* -------  Footer ------- */
 
 footer {
@@ -117,3 +140,28 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
+@media all and (min-width: 480px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  form {
+    flex-direction: row;
+  }
+
+  .about-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about-section img {
+    width: 25%;
+  }
+
+  .about-section p {
+    width: 50%;
+  }
+}
