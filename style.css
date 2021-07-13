@@ -50,9 +50,6 @@ main img {
   flex: 2;
 }
 
-.add-padding {
-  padding-bottom: 10px;
-}
 
 /* -------  Navigation ------- */
 
@@ -76,6 +73,10 @@ nav {
   color: #fff;
 }
 
+header nav ul {
+  display: flex;
+}
+
 header nav ul li {
   list-style-type: none;
 
@@ -92,9 +93,6 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
-ul {
-  display: flex;
-}
 
 /* -------  Search Form ------- */
 form {
@@ -151,39 +149,24 @@ footer p {
     flex-direction: row;
   }
 
-  .about-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
+ .group {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+ }
 
-  .about-section img {
-    width: 25%;
-  }
+ #ideas .group {
+   min-height: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+ }
 
-  .about-section p {
-    width: 50%;
-  }
+ #ideas div {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+ }
 
-  .host-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .host-section img {
-    width: 50%;
-  }
-
-  .host-section p {
-    width: 50%;
-  }
-
-  .ideas-section {
-    display: flex;
-  }
-
-  .ideas-section img {
-    width: 50%;
-  }
 }
